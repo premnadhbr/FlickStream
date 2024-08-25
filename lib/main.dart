@@ -1,3 +1,4 @@
+import 'package:flickstream/view/home/homepage.dart';
 import 'package:flickstream/view/onboarding/onboard.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const OnBoardingScreen(),
+      home: const Homepage(),
     );
   }
 }
