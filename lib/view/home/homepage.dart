@@ -1,7 +1,8 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flickstream/model/movie.dart';
 import 'package:flickstream/services/services.dart';
-import 'package:flickstream/view/overview.dart';
+import 'package:flickstream/utils/colors.dart';
+import 'package:flickstream/view/overview/overview.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatefulWidget {
@@ -27,21 +28,19 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text("Movie App"),
-      //   leading: const Icon(Icons.menu),
-      //   centerTitle: true,
-      //   actions: const [
-      //     Icon(Icons.search_off_rounded),
-      //     SizedBox(
-      //       width: 20,
-      //     ),
-      //     Icon(Icons.notifications),
-      //     SizedBox(
-      //       width: 10,
-      //     ),
-      //   ],
-      // ),
+      backgroundColor: AppColors.KBackground,
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        backgroundColor: AppColors.KBackground,
+        title: const Text(
+          'Flickstream',
+          style: TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.w900,
+              color: AppColors.kWhite),
+        ),
+        centerTitle: true,
+      ),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8),
@@ -51,8 +50,9 @@ class _HomepageState extends State<Homepage> {
               const Text(
                 "Now showing",
                 style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.kPrimary,
                 ),
               ),
               const SizedBox(
@@ -130,8 +130,9 @@ class _HomepageState extends State<Homepage> {
               const Text(
                 "Up Coming Movies",
                 style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.kPrimary,
                 ),
               ),
               const SizedBox(
@@ -183,8 +184,9 @@ class _HomepageState extends State<Homepage> {
               const Text(
                 "Popular Movies",
                 style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.black,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.kPrimary,
                 ),
               ),
               const SizedBox(

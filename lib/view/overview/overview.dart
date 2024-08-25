@@ -118,7 +118,7 @@ class _OverViewPageState extends State<OverViewPage> {
                         builder: (context, snapshot) {
                           if (snapshot.hasData) {
                             return SizedBox(
-                              height: 200,
+                              height: 140,
                               child: ListView.builder(
                                 scrollDirection: Axis.horizontal,
                                 itemCount: snapshot.data!.length,
