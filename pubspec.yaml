@@ -42,6 +42,7 @@ dependencies:
   dots_indicator: ^3.0.0
   bloc: ^8.1.4
   flutter_bloc: ^8.1.6
+  ionicons: ^0.2.2
 
 dev_dependencies:
   flutter_test:

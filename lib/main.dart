@@ -1,5 +1,4 @@
-import 'package:flickstream/view/home/homepage.dart';
-import 'package:flickstream/view/onboarding/onboard.dart';
+import 'package:flickstream/view/bottomnav/bottomnav.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +13,7 @@ class Myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(),
-      home: const Homepage(),
+      home: const Bottomnav(),
     );
   }
 }
